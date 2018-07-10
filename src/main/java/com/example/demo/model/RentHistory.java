@@ -6,10 +6,11 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table
 public class RentHistory {
-
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @ManyToOne(cascade = CascadeType.ALL)
     private String carNumber;
@@ -26,6 +27,10 @@ public class RentHistory {
 
     @Nullable
     private Date endDate;
+
+    public RentHistory(){
+
+    }
 
     public RentHistory(String carNumber, String carModel, String startPoint, String endPoint, String renterName, Date startDate) {
         this.carNumber = carNumber;
@@ -46,7 +51,7 @@ public class RentHistory {
         this.endDate = endDate;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 

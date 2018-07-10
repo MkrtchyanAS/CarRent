@@ -4,10 +4,11 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
+@Table(name = "CAR")
 public class Car {
-
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     private String model;
 
@@ -23,6 +24,9 @@ public class Car {
 
     public String getCurrentRentPoint() {
         return currentRentPoint;
+    }
+
+    public Car(){
     }
 
     public Car(String model, String number, String currentRentPoint) {
@@ -82,7 +86,7 @@ public class Car {
         this.number = number;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 

@@ -4,10 +4,11 @@ import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
+@Table
 public class RentPoint {
-
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     private String address;
 
@@ -19,12 +20,16 @@ public class RentPoint {
     @OneToMany(mappedBy = "number", fetch = FetchType.EAGER)
     private Collection<Car> carCollection;
 
+    public RentPoint(){
+
+    }
+
     public RentPoint(String address, Collection<Car> carCollection) {
         this.address = address;
         this.carCollection = carCollection;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
