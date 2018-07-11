@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "db.hibernate.hbm2ddl.auto",
+      "type": "java.lang.String",
+      "description": "Description for db.hibernate.hbm2ddl.auto."
+    },
+    {
+      "name": "db.driver",
+      "type": "java.lang.String",
+      "description": "Description for db.driver."
+    },
+    {
+      "name": "db.username",
+      "type": "java.lang.String",
+      "description": "Description for db.username."
+    },
+    {
+      "name": "db.password",
+      "type": "java.lang.String",
+      "description": "Description for db.password."
+    },
+    {
+      "name": "db.url",
+      "type": "java.lang.String",
+      "description": "Description for db.url."
+    },
+    {
+      "name": "db.hibernate.dialect",
+      "type": "java.lang.String",
+      "description": "Description for db.hibernate.dialect."
+    },
+    {
+      "name": "db.hibernate.show_sql",
+      "type": "java.lang.String",
+      "description": "Description for db.hibernate.show_sql."
+    },
+    {
+      "name": "db.entitymanager.packages.to.scan",
+      "type": "java.lang.String",
+      "description": "Description for db.entitymanager.packages.to.scan."
+    }
+  ] }

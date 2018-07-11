@@ -1,10 +1,13 @@
 package com.example.demo.model;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
 @Table(name = "CAR")
+@Component
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

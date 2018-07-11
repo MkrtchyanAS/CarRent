@@ -1,0 +1,46 @@
+{
+  "hints": [],
+  "groups": [],
+  "properties": [
+    {
+      "name": "db.driver",
+      "description": "Description for db.driver.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "db.entitymanager.packages.to.scan",
+      "description": "Description for db.entitymanager.packages.to.scan.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "db.hibernate.dialect",
+      "description": "Description for db.hibernate.dialect.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "db.hibernate.hbm2ddl.auto",
+      "description": "Description for db.hibernate.hbm2ddl.auto.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "db.hibernate.show_sql",
+      "description": "Description for db.hibernate.show_sql.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "db.password",
+      "description": "Description for db.password.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "db.url",
+      "description": "Description for db.url.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "db.username",
+      "description": "Description for db.username.",
+      "type": "java.lang.String"
+    }
+  ]
+}
